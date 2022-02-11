@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <title>Farus - Te guía</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script text="text/javascript" src="js/jquery.js"></script>
+    <script text="text/javascript" src="js/app.js"></script>
+    <script text="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header class="nav-header pad-20">
+        <div class="container-fluid">
+            <div class="col-md-4">
+                <a href="index.html">
+                        <img src="images/farus.png" alt="Farus">
+                    </a>
+            </div>
+            <div class="float-right">
+                <span class="pad-lt-rt colorWhite font-16"><span class="icon-calendar font-20"></span> 12/09/2017</span>
+                <span class="pad-lt-rt colorWhite font-16"><span class="icon-hour font-20"></span> 04:58:30 PM</span>
+                <span class="pad-lt-rt colorWhite font-16"><span class="icon-perfil font-14 circleUser"></span> Daniel Eduardo
+                Alzate</span>
+            </div>
+        </div>
+    </header>
+    <aside id="menu-left">
+        <div class="items">
+            <a href="procesos.html" target="_self">
+                <div class="btnMenu active">
+                    <img src="images/procesos.png" alt="Procesos">
+                    <p class="colorBlue semiBold text-center font-14">Procesos</p>
+                </div>
+            </a>
+        </div>
+        <div class="items">
+            <a href="#" target="_self">
+                <div class="btnMenu">
+                    <img src="images/sistemas.png" alt="Sistemas de información">
+                    <p class="colorBlue semiBold text-center font-14">Sistema de información</p>
+                </div>
+            </a>
+        </div>
+        <div class="items">
+            <a href="#" target="_self">
+                <div class="btnMenu">
+                    <img src="images/conmutacion.png" alt="Conmutación">
+                    <p class="colorBlue semiBold text-center font-14">Conmutación</p>
+                </div>
+            </a>
+        </div>
+        <div class="items">
+            <a href="#" target="_self">
+                <div class="btnMenu">
+                    <img src="images/codigo.png" alt="Código de policía">
+                    <p class="colorBlue semiBold text-center font-14">Código de Policía</p>
+                </div>
+            </a>
+        </div>
+        <div class="items">
+            <a href="#" target="_self">
+                <div class="btnMenu">
+                    <img src="images/conductas.png" alt="Conductas">
+                    <p class="colorBlue semiBold text-center font-14">Conductas</p>
+                </div>
+            </a>
+        </div>
+    </aside>
+    <section id="right-content" class="containers mg-top-100 pad-Btm-100">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <div class="float-right">
+                    <span class="circleGray font-16 colorWhite semiBold">1</span>
+                    <span class="font-14 colorLgtGrey semiBold relative tituloGray"> Verificación de datos</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="float-left">
+                    <span class="circleBlue font-16 colorWhite semiBold">2</span>
+                    <span class="font-14 colorBlue semiBold relative tituloGradient"> Realizar audiencia</span>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <!--Step by step-->
+        <nav class="bar-progress mg-top-30">
+            <!--
+            porcentajes por step
+            step1 0%  |  step3 38%  |  step5 65%  |  step7 88%
+            step2 20%  | step4 50%  |  step6 78%  |  step8 94%
+            step9 100%
+            -->
+            <!--linea-->
+            <div class="row relative">
+                <div id="myProgress" class="center-absolute">
+                    <div id="myBar" style="width: 0%;"></div>
+                </div>
+            </div>
+            <div class="bar-step">
+                <div class="div-row">
+                    <!-- step 1 -->
+                    <div class="step active font-12 semiBold">
+                        <div class="circulo">1</div>
+                        <p class="pad-top-5">Revisión de datos básicos</p>
+                    </div>
+                    <!-- step 2 -->
+                    <div class="step font-12 semiBold">
+                        <div class="circulo">2</div>
+                        <p class="pad-top-5">Verificación comparecencia<br>de las partes</p>
+                    </div>
+                    <!-- step 3 -->
+                    <div class="step font-12 semiBold">
+                        <div class="circulo">3</div>
+                        <p class="pad-top-5">Inicio grabación</p>
+                    </div>
+                    <!-- step 4 -->
+                    <div class="step font-12 semiBold">
+                        <div class="circulo">4</div>
+                        <p class="pad-top-5">Lectura inicial</p>
+                    </div>
+                    <!-- step 5 -->
+                    <div class="step font-12 semiBold">
+                        <div class="circulo">5</div>
+                        <p class="pad-top-5">Explicación de<br>exposición de motivos</p>
+                    </div>
+                    <!-- step 6 -->
+                    <div class="step font-12 semiBold">
+                        <div class="circulo">6</div>
+                        <p class="pad-top-5">Conciliación</p>
+                    </div>
+                    <!-- step 7 -->
+                    <div class="step font-12 semiBold">
+                        <div class="circulo">7</div>
+                        <p class="pad-top-5">Pruebas</p>
+                    </div>
+                    <!-- step 8 -->
+                    <div class="step font-12 semiBold">
+                        <div class="circulo">8</div>
+                        <p class="pad-top-5">Decisión</p>
+                    </div>
+                    <!-- step 9  -->
+                    <div class="step font-12 semiBold">
+                        <div class="circulo">9</div>
+                        <p class="pad-top-5">Recursos</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <article class="row mg-top-30">
+            <div class="col-md-12">
+                <div class="circle">
+                    <img class="centerImg" src="Images/juez.png" alt="">
+                </div>
+                <div class="cont-title">
+                    <h4 class="text-center bold colorBlue font-14">Audiencia pública</h4>
+                </div>
+            </div>
+        </article>
+        <article class="row mg-top-10">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="colorBlack bold font-12">Fecha de audiencia</h4>
+                        <p class="colorGrey mg-top-10 semiBold font-12">8/18/2017 - 12:03:21 P.M</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="colorBlack bold font-12">Número de incidente</h4>
+                        <p class="colorGrey mg-top-10 semiBold font-12">79</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="colorSky relative semiBold mg0 font-14 side-title titleWidth2">Presunto Infractor</h3>
+                    </div>
+                </div>
+                <div class="row mg-top-10">
+                    <div class="col-md-6">
+                        <h4 class="colorBlack bold font-12">Nombres y apellidos</h4>
+                        <p class="colorGrey mg-top-10 semiBold font-12">Lorem Ipsum</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="colorBlack bold font-12">Documento de identidad</h4>
+                        <p class="colorGrey mg-top-10 semiBold font-12">0123456789</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="colorSky relative semiBold mg0 font-14 side-title titleWidth">Quejoso</h3>
+                    </div>
+                </div>
+                <div class="row mg-top-10">
+                    <div class="col-md-6">
+                        <h4 class="colorBlack bold font-12">Nombres y apellidos</h4>
+                        <input class="infractor semiBold font-12 colorGrey" type="text" value="Lorem ipsum">
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="colorBlack bold font-12">Documento de identidad</h4>
+                        <input class="infractor semiBold font-12 colorGrey" type="text" value="0123456789">
+                    </div>
+                    <div class="col-md-10 mg-top-10" style="padding-left: 0;">
+                        <div class="col-md-12">
+                            <h4 class="colorBlack bold font-12">Agregar parte</h4>
+                        </div>
+                        <!--modal 1-->
+                        <div class="col-md-4">
+                            <a href="#" data-toggle="modal" data-target=".perito">
+                                <div class="btns mg-top-10">
+                                    <p class="font-12 semiBold text-center">+ Perito</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="modal fade perito" tabindex="-1" role="dialog">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header headModal">
+                                        <div class="row">
+                                            <div class="col-md-10">
+                                                <h4 class="colorWhite semiBold font-18">Perito</h4>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <a href="" data-dismiss="modal">
+                                                    <p class="icon-cerrar colorWhite font-16 pad-top-10 float-right"></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h4 class="colorBlack bold font-12">Agregar datos del perito</h4>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <p class="semiBold font-12 colorBlack">Nombre</p>
+                                                <input class="infractor semiBold font-12 colorGrey" type="text" placeholder="Lorem Ipsum">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <p class="semiBold font-12 colorBlack">No. de Documento</p>
+                                                <input class="infractor semiBold font-12 colorGrey" type="text" placeholder="Lorem Ipsum">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <p class="semiBold font-12 colorBlack">Profesión</p>
+                                                <input class="infractor semiBold font-12 colorGrey" type="text" placeholder="Lorem Ipsum">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="col-md-3"></div>
+                                        <div class="col-md-3"></div>
+                                        <div class="col-md-3">
+                                            <a href="" data-dismiss="modal">
+                                                <div class="btns">
+                                                    <p class="font-12 semiBold text-center">Cerrar</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <a href="">
+                                                <div class="btns">
+                                                    <p class="font-12 semiBold text-center">Agregar</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--modal 1 end-->
+                        <!--modal 2 -->
+                        <div class="col-md-4">
+                            <a href="#" data-toggle="modal" data-target=".testigo">
+                                <div class="btns mg-top-10">
+                                    <p class="font-12 semiBold text-center">+ Testigo</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="modal fade testigo" tabindex="-1" role="dialog">
+                            <div class="modal-dialog" role="document  ">
+                                <div class="modal-content">
+                                    <div class="modal-header headModal">
+                                        <div class="row">
+                                            <div class="col-md-10">
+                                                <h4 class="colorWhite semiBold font-18">Testigo</h4>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <a href="" data-dismiss="modal">
+                                                    <p class="icon-cerrar colorWhite font-16 pad-top-10 float-right"></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h4 class="colorBlack bold font-12">Agregar datos del testigo</h4>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="semiBold font-12 colorBlack">Nombre</p>
+                                                <input class="infractor semiBold font-12 colorGrey" type="text" placeholder="Lorem Ipsum">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="semiBold font-12 colorBlack">No. de Documento</p>
+                                                <input class="infractor semiBold font-12 colorGrey" type="text" placeholder="Lorem Ipsum">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="col-md-3"></div>
+                                        <div class="col-md-3"></div>
+                                        <div class="col-md-3">
+                                            <a href="" data-dismiss="modal">
+                                                <div class="btns">
+                                                    <p class="font-12 semiBold text-center">Cerrar</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <a href="">
+                                                <div class="btns">
+                                                    <p class="font-12 semiBold text-center">Agregar</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--modal 2 end-->
+                        <!--modal 3-->
+                        <div class="col-md-4">
+                            <a href="#" data-toggle="modal" data-target=".apoderado">
+                                <div class="btns mg-top-10">
+                                    <p class="font-12 semiBold text-center">+ Apoderado</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="modal fade apoderado" tabindex="-1" role="dialog">
+                            <div class="modal-dialog" role="document  ">
+                                <div class="modal-content">
+                                    <div class="modal-header headModal">
+                                        <div class="row">
+                                            <div class="col-md-10">
+                                                <h4 class="colorWhite semiBold font-18">Apoderado</h4>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <a href="" data-dismiss="modal">
+                                                    <p class="icon-cerrar colorWhite font-16 pad-top-10 float-right"></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h4 class="colorBlack bold font-12">Agregar datos del apoderado </h4>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <p class="bold font-12 colorBlack">¿De quién? *</p>
+                                                <select class="infractor semiBold font-12 colorGrey">
+                                                    <option class="semiBold font-12 colorGrey" value="Quejoso">Quejoso</option>
+                                                    <option class="semiBold font-12 colorGrey" value="Presunto infractor">Presunto infractor</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4 mg-top-10">
+                                                <p class="bold font-12 colorBlack">Nombre</p>
+                                                <input class="infractor semiBold font-12 colorGrey" type="text" placeholder="Lorem Ipsum">
+                                            </div>
+                                            <div class="col-md-4 mg-top-10">
+                                                <p class="bold font-12 colorBlack">No. de Documento</p>
+                                                <input class="infractor semiBold font-12 colorGrey" type="text" placeholder="Lorem Ipsum">
+                                            </div>
+                                            <div class="col-md-4 mg-top-10">
+                                                <p class="bold font-12 colorBlack">Tarjeta profesional</p>
+                                                <input class="infractor semiBold font-12 colorGrey" type="text" placeholder="Lorem Ipsum">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="col-md-3"></div>
+                                        <div class="col-md-3"></div>
+                                        <div class="col-md-3">
+                                            <a href="" data-dismiss="modal">
+                                                <div class="btns">
+                                                    <p class="font-12 semiBold text-center">Cerrar</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <a href="">
+                                                <div class="btns">
+                                                    <p class="font-12 semiBold text-center">Agregar</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--modal 3 end-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="colorSky relative semiBold mg0 font-14 side-title titleWidth3">Autoridad que puso la orden de comparendo</h3>
+                    </div>
+                </div>
+                <div class="row mg-top-10">
+                    <div class="col-md-6">
+                        <h4 class="colorBlack bold font-12">Nombres y apellidos</h4>
+                        <p class="colorGrey mg-top-10 semiBold font-12">Lorem Ipsum</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="colorBlack bold font-12">Institución</h4>
+                        <p class="colorGrey mg-top-10 semiBold font-12">Policía Nacional</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="colorBlack bold font-12">Cargo</h4>
+                        <p class="colorGrey mg-top-10 semiBold font-12">Patrullero</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="colorSky relative semiBold mg0 font-14 side-title titleWidth4">Autoridad competente primera instancia</h3>
+                    </div>
+                </div>
+                <div class="row mg-top-10">
+                    <div class="col-md-6">
+                        <h4 class="colorBlack bold font-12">Nombres y apellidos</h4>
+                        <input class="infractor semiBold font-12 colorGrey" type="text" value="Lorem Ipsum">
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="colorBlack bold font-12">Institución</h4>
+                        <input class="infractor semiBold font-12 colorGrey" type="text" value="Inspección de policía">
+                    </div>
+                    <div class="col-md-6 mg-top-10">
+                        <h4 class="colorBlack bold font-12">Cargo</h4>
+                        <input class="infractor semiBold font-12 colorGrey" type="text" value="Inspector">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="row mg-top-30">
+            <div class="col-md-4">
+                <a href="Verificacion.html">
+                    <div class="right-auto">
+                        <p class="font-12 semiBold colorSky scale"><span class="icon-arrow-left font-14 colorWhite circleSky"></span> Atrás</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <a href="realizar-Verificacion.html">
+                    <div class="left-auto">
+                        <p class="font-12 semiBold colorSky text-right scale">Siguiente <span class="icon-arrow-right font-14 colorWhite circleSky"></span></p>
+                    </div>
+                </a>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>

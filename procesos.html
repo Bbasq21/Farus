@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+        <link rel="icon" href="images/icon.png" type="image/x-icon">
+        <title>Farus - Te guía</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/app.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-table.min.css" rel="stylesheet">
+        <script text="text/javascript" src="js/jquery.js"></script>
+        <script text="text/javascript" src="js/app.js"></script>
+        <script text="text/javascript" src="js/bootstrap.min.js"></script>
+        <script text="text/javascript" src="js/bootstrap-table.min.js"></script>
+    </head>
+    <body>
+        <header class="nav-header pad-20">
+            <div class="container-fluid">
+                <div class="col-md-4">
+                    <a href="index.html">
+                        <img src="images/farus.png" alt="Farus">
+                    </a>
+                </div>
+                <div class="float-right">
+                    <span class="pad-lt-rt colorWhite font-16"><span class="icon-calendar font-20"></span> 12/09/2017</span>
+                    <span class="pad-lt-rt colorWhite font-16"><span class="icon-hour font-20"></span> 04:58:30 PM</span>
+                    <span class="pad-lt-rt colorWhite font-16"><span class="icon-perfil font-14 circleUser"></span> Daniel Eduardo Alzate</span>
+                </div>
+            </div>
+        </header>
+        <aside id="menu-left">
+            <div class="items">
+                <a href="procesos.html" target="_self">
+                    <div class="btnMenu active">
+                        <img src="images/procesos.png" alt="Procesos">
+                        <p class="colorBlue semiBold text-center font-14">Procesos</p>
+                    </div>
+                </a>
+            </div>
+            <div class="items">
+                <a href="#" target="_self">
+                    <div class="btnMenu">
+                        <img src="images/sistemas.png" alt="Sistemas de información">
+                        <p class="colorBlue semiBold text-center font-14">Sistema de información</p>
+                    </div>
+                </a>
+            </div>
+            <div class="items">
+                <a href="#" target="_self">
+                    <div class="btnMenu">
+                        <img src="images/conmutacion.png" alt="Conmutación">
+                        <p class="colorBlue semiBold text-center font-14">Conmutación</p>
+                    </div>
+                </a>
+            </div>
+            <div class="items">
+                <a href="#" target="_self">
+                    <div class="btnMenu">
+                        <img src="images/codigo.png" alt="Código de policía">
+                        <p class="colorBlue semiBold text-center font-14">Código de Policía</p>
+                    </div>
+                </a>
+            </div>
+            <div class="items">
+                <a href="#" target="_self">
+                    <div class="btnMenu">
+                        <img src="images/conductas.png" alt="Conductas">
+                        <p class="colorBlue semiBold text-center font-14">Conductas</p>
+                    </div>
+                </a>
+            </div>
+        </aside>
+        <section id="right-content" class="containers mg-top-100 pad-Btm-100">
+            <div class="row">
+                <h2 class="colorBlue font-16 semiBold titles">Seleccione incidente</h2>
+            </div>
+            <article class="row mg-top-20">
+                <table data-toggle="table">
+                    <tbody>
+                        <tr>
+                            <th height="80px" class="col-md-1 relative">
+                                <p class="colorGrey text-center font-12 semiBold">Fecha Audiencia</p>
+                                <select class="InpSearching center-absolute bottom10">
+                                    <option class="semiBold ColorGrey" value="Proximo">Proximo</option>
+                                    <option class="semiBold ColorGrey" value="Cercano">Cercano</option>
+                                    <option class="semiBold ColorGrey" value="Lejano">Lejano</option>
+                                </select>
+                            </th>
+                            <th class="col-md-1 relative">
+                                <p class="colorGrey text-center font-12 semiBold">Incidente</p>
+                                <input class="InpSearching center-absolute bottom10" type="number" placeholder="Buscar #">
+                            </th>
+                            <th class="col-md-1 relative">
+                                <p class="colorGrey text-center font-12 semiBold">Número de documento</p>
+                                <input class="InpSearching center-absolute bottom10" type="number" placeholder="Buscar #">
+                            </th>
+                            <th class="col-md-2 relative">
+                                <p class="colorGrey text-center font-12 semiBold">Nombre presunto Infractor</p>
+                                <input class="InpSearching center-absolute bottom10" type="text" placeholder="Buscar">
+                            </th>
+                            <th class="col-md-1 relative">
+                                <p class="colorGrey text-center font-12 semiBold">Fecha Hechos</p>
+                                <input class="InpSearching center-absolute bottom10" type="date">
+                            </th>
+                            <th class="col-md-4 relative">
+                                <p class="colorGrey text-center font-12 semiBold">Conducta</p>
+                            </th>
+                            <th class="col-md-1 relative">
+                                <p class="colorGrey text-center font-12 semiBold">Artículo</p>
+                                <input class="InpSearching center-absolute bottom10" type="number" placeholder="Buscar #">
+                            </th>
+                            <th class="col-md-1 relative">
+                                <p class="colorGrey text-center font-12 semiBold">Numeral</p>
+                                <input class="InpSearching center-absolute bottom10" type="number" placeholder="Buscar #">
+                            </th>
+                        </tr>
+                        <tr onclick="location.href='verificacion.html'">
+                            <td class="colorRed font-12 text-center semiBold">12/09/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">79</td>
+                            <td class="colorGrey font-12 text-center semiBold">0123456789</td>
+                            <td class="colorGrey font-12 text-center semiBold">Lorem Ipsum Dolor itsem</td>
+                            <td class="colorGrey font-12 text-center semiBold">15/08/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">Realizar necesidades fisiológicas en el espacio público.</td>
+                            <td class="colorGrey font-12 text-center semiBold">140</td>
+                            <td class="colorGrey font-12 text-center semiBold">14</td>
+                        </tr>
+                        <tr>
+                            <td class="colorRed font-12 text-center semiBold">15/09/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">79</td>
+                            <td class="colorGrey font-12 text-center semiBold">0123456789</td>
+                            <td class="colorGrey font-12 text-center semiBold">Lorem Ipsum Dolor itsem</td>
+                            <td class="colorGrey font-12 text-center semiBold">15/08/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">Realizar acciones que constituyan un riesgo para la propia vida o la de terceros, antes, durante
+                                o después de tales actividades.</td>
+                            <td class="colorGrey font-12 text-center semiBold">140</td>
+                            <td class="colorGrey font-12 text-center semiBold">14</td>
+                        </tr>
+                        <tr>
+                            <td class="colorRed font-12 text-center semiBold">12/09/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">79</td>
+                            <td class="colorGrey font-12 text-center semiBold">0123456789</td>
+                            <td class="colorGrey font-12 text-center semiBold">Lorem Ipsum Dolor itsem</td>
+                            <td class="colorGrey font-12 text-center semiBold">15/08/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">
+                                <p>Permitir, auspiciar, tolerar, inducir o constreñir el ingreso de los niños, niñas y adolescentes
+                                    a los lugares donde se realicen espectáculos o actividades cinematográficas aptas solo
+                                    para mayores de 18 años</p>
+                            </td>
+                            <td class="colorGrey font-12 text-center semiBold">140</td>
+                            <td class="colorGrey font-12 text-center semiBold">14</td>
+                        </tr>
+                        <tr>
+                            <td class="colorBlue font-12 text-center semiBold">12/09/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">79</td>
+                            <td class="colorGrey font-12 text-center semiBold">0123456789</td>
+                            <td class="colorGrey font-12 text-center semiBold">Lorem Ipsum Dolor itsem</td>
+                            <td class="colorGrey font-12 text-center semiBold">15/08/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">Realizar necesidades fisiológicas en el espacio público.</td>
+                            <td class="colorGrey font-12 text-center semiBold">140</td>
+                            <td class="colorGrey font-12 text-center semiBold">14</td>
+                        </tr>
+                        <tr>
+                            <td class="colorBlue font-12 text-center semiBold">12/09/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">79</td>
+                            <td class="colorGrey font-12 text-center semiBold">0123456789</td>
+                            <td class="colorGrey font-12 text-center semiBold">Lorem Ipsum Dolor itsem</td>
+                            <td class="colorGrey font-12 text-center semiBold">15/08/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">Realizar necesidades fisiológicas en el espacio público.</td>
+                            <td class="colorGrey font-12 text-center semiBold">140</td>
+                            <td class="colorGrey font-12 text-center semiBold">14</td>
+                        </tr>
+                        <tr>
+                            <td class="colorSky font-12 text-center semiBold">12/09/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">79</td>
+                            <td class="colorGrey font-12 text-center semiBold">0123456789</td>
+                            <td class="colorGrey font-12 text-center semiBold">Lorem Ipsum Dolor itsem</td>
+                            <td class="colorGrey font-12 text-center semiBold">15/08/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">Realizar necesidades fisiológicas en el espacio público.</td>
+                            <td class="colorGrey font-12 text-center semiBold">140</td>
+                            <td class="colorGrey font-12 text-center semiBold">14</td>
+                        </tr>
+                        <tr>
+                            <td class="colorSky font-12 text-center semiBold">12/09/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">79</td>
+                            <td class="colorGrey font-12 text-center semiBold">0123456789</td>
+                            <td class="colorGrey font-12 text-center semiBold">Lorem Ipsum Dolor itsem</td>
+                            <td class="colorGrey font-12 text-center semiBold">15/08/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">Realizar necesidades fisiológicas en el espacio público.</td>
+                            <td class="colorGrey font-12 text-center semiBold">140</td>
+                            <td class="colorGrey font-12 text-center semiBold">14</td>
+                        </tr>
+                        <tr>
+                            <td class="colorSky font-12 text-center semiBold">12/09/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">79</td>
+                            <td class="colorGrey font-12 text-center semiBold">0123456789</td>
+                            <td class="colorGrey font-12 text-center semiBold">Lorem Ipsum Dolor itsem</td>
+                            <td class="colorGrey font-12 text-center semiBold">15/08/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">Realizar necesidades fisiológicas en el espacio público.</td>
+                            <td class="colorGrey font-12 text-center semiBold">140</td>
+                            <td class="colorGrey font-12 text-center semiBold">14</td>
+                        </tr>
+                        <tr>
+                            <td class="colorRed font-12 text-center semiBold">12/09/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">79</td>
+                            <td class="colorGrey font-12 text-center semiBold">0123456789</td>
+                            <td class="colorGrey font-12 text-center semiBold">Lorem Ipsum Dolor itsem</td>
+                            <td class="colorGrey font-12 text-center semiBold">15/08/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">
+                                <p>Permitir, auspiciar, tolerar, inducir o constreñir el ingreso de los niños, niñas y adolescentes
+                                    a los lugares donde se realicen espectáculos o actividades cinematográficas aptas solo
+                                    para mayores de 18 años</p>
+                            </td>
+                            <td class="colorGrey font-12 text-center semiBold">140</td>
+                            <td class="colorGrey font-12 text-center semiBold">14</td>
+                        </tr>
+                        <tr>
+                            <td class="colorBlue font-12 text-center semiBold">12/09/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">79</td>
+                            <td class="colorGrey font-12 text-center semiBold">0123456789</td>
+                            <td class="colorGrey font-12 text-center semiBold">Lorem Ipsum Dolor itsem</td>
+                            <td class="colorGrey font-12 text-center semiBold">15/08/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">Realizar necesidades fisiológicas en el espacio público.</td>
+                            <td class="colorGrey font-12 text-center semiBold">140</td>
+                            <td class="colorGrey font-12 text-center semiBold">14</td>
+                        </tr>
+                        <tr>
+                            <td class="colorBlue font-12 text-center semiBold">12/09/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">79</td>
+                            <td class="colorGrey font-12 text-center semiBold">0123456789</td>
+                            <td class="colorGrey font-12 text-center semiBold">Lorem Ipsum Dolor itsem</td>
+                            <td class="colorGrey font-12 text-center semiBold">15/08/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">Realizar necesidades fisiológicas en el espacio público.</td>
+                            <td class="colorGrey font-12 text-center semiBold">140</td>
+                            <td class="colorGrey font-12 text-center semiBold">14</td>
+                        </tr>
+                        <tr>
+                            <td class="colorSky font-12 text-center semiBold">12/09/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">79</td>
+                            <td class="colorGrey font-12 text-center semiBold">0123456789</td>
+                            <td class="colorGrey font-12 text-center semiBold">Lorem Ipsum Dolor itsem</td>
+                            <td class="colorGrey font-12 text-center semiBold">15/08/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">Realizar necesidades fisiológicas en el espacio público.</td>
+                            <td class="colorGrey font-12 text-center semiBold">140</td>
+                            <td class="colorGrey font-12 text-center semiBold">14</td>
+                        </tr>
+                        <tr>
+                            <td class="colorSky font-12 text-center semiBold">12/09/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">79</td>
+                            <td class="colorGrey font-12 text-center semiBold">0123456789</td>
+                            <td class="colorGrey font-12 text-center semiBold">Lorem Ipsum Dolor itsem</td>
+                            <td class="colorGrey font-12 text-center semiBold">15/08/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">Realizar necesidades fisiológicas en el espacio público.</td>
+                            <td class="colorGrey font-12 text-center semiBold">140</td>
+                            <td class="colorGrey font-12 text-center semiBold">14</td>
+                        </tr>
+                        <tr>
+                            <td class="colorSky font-12 text-center semiBold">12/09/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">79</td>
+                            <td class="colorGrey font-12 text-center semiBold">0123456789</td>
+                            <td class="colorGrey font-12 text-center semiBold">Lorem Ipsum Dolor itsem</td>
+                            <td class="colorGrey font-12 text-center semiBold">15/08/17</td>
+                            <td class="colorGrey font-12 text-center semiBold">Realizar necesidades fisiológicas en el espacio público.</td>
+                            <td class="colorGrey font-12 text-center semiBold">140</td>
+                            <td class="colorGrey font-12 text-center semiBold">14</td>
+                        </tr>
+                    </tbody>
+                    <tr>
+                        <td class="colorRed font-12 text-center semiBold">12/09/17</td>
+                        <td class="colorGrey font-12 text-center semiBold">79</td>
+                        <td class="colorGrey font-12 text-center semiBold">0123456789</td>
+                        <td class="colorGrey font-12 text-center semiBold">Lorem Ipsum Dolor itsem</td>
+                        <td class="colorGrey font-12 text-center semiBold">15/08/17</td>
+                        <td class="colorGrey font-12 text-center semiBold">
+                            <p>Permitir, auspiciar, tolerar, inducir o constreñir el ingreso de los niños, niñas y adolescentes
+                                a los lugares donde se realicen espectáculos o actividades cinematográficas aptas solo para
+                                mayores de 18 años</p>
+                        </td>
+                        <td class="colorGrey font-12 text-center semiBold">140</td>
+                        <td class="colorGrey font-12 text-center semiBold">14</td>
+                    </tr>
+                    <tr>
+                        <td class="colorBlue font-12 text-center semiBold">12/09/17</td>
+                        <td class="colorGrey font-12 text-center semiBold">79</td>
+                        <td class="colorGrey font-12 text-center semiBold">0123456789</td>
+                        <td class="colorGrey font-12 text-center semiBold">Lorem Ipsum Dolor itsem</td>
+                        <td class="colorGrey font-12 text-center semiBold">15/08/17</td>
+                        <td class="colorGrey font-12 text-center semiBold">Realizar necesidades fisiológicas en el espacio público.</td>
+                        <td class="colorGrey font-12 text-center semiBold">140</td>
+                        <td class="colorGrey font-12 text-center semiBold">14</td>
+                    </tr>
+                    <tr>
+                        <td class="colorBlue font-12 text-center semiBold">12/09/17</td>
+                        <td class="colorGrey font-12 text-center semiBold">79</td>
+                        <td class="colorGrey font-12 text-center semiBold">0123456789</td>
+                        <td class="colorGrey font-12 text-center semiBold">Lorem Ipsum Dolor itsem</td>
+                        <td class="colorGrey font-12 text-center semiBold">15/08/17</td>
+                        <td class="colorGrey font-12 text-center semiBold">Realizar necesidades fisiológicas en el espacio público.</td>
+                        <td class="colorGrey font-12 text-center semiBold">140</td>
+                        <td class="colorGrey font-12 text-center semiBold">14</td>
+                    </tr>
+                    <tr>
+                        <td class="colorSky font-12 text-center semiBold">12/09/17</td>
+                        <td class="colorGrey font-12 text-center semiBold">79</td>
+                        <td class="colorGrey font-12 text-center semiBold">0123456789</td>
+                        <td class="colorGrey font-12 text-center semiBold">Lorem Ipsum Dolor itsem</td>
+                        <td class="colorGrey font-12 text-center semiBold">15/08/17</td>
+                        <td class="colorGrey font-12 text-center semiBold">Realizar necesidades fisiológicas en el espacio público.</td>
+                        <td class="colorGrey font-12 text-center semiBold">140</td>
+                        <td class="colorGrey font-12 text-center semiBold">14</td>
+                    </tr>
+                    <tr>
+                        <td class="colorSky font-12 text-center semiBold">12/09/17</td>
+                        <td class="colorGrey font-12 text-center semiBold">79</td>
+                        <td class="colorGrey font-12 text-center semiBold">0123456789</td>
+                        <td class="colorGrey font-12 text-center semiBold">Lorem Ipsum Dolor itsem</td>
+                        <td class="colorGrey font-12 text-center semiBold">15/08/17</td>
+                        <td class="colorGrey font-12 text-center semiBold">Realizar necesidades fisiológicas en el espacio público.</td>
+                        <td class="colorGrey font-12 text-center semiBold">140</td>
+                        <td class="colorGrey font-12 text-center semiBold">14</td>
+                    </tr>
+                    <tr>
+                        <td class="colorSky font-12 text-center semiBold">12/09/17</td>
+                        <td class="colorGrey font-12 text-center semiBold">79</td>
+                        <td class="colorGrey font-12 text-center semiBold">0123456789</td>
+                        <td class="colorGrey font-12 text-center semiBold">Lorem Ipsum Dolor itsem</td>
+                        <td class="colorGrey font-12 text-center semiBold">15/08/17</td>
+                        <td class="colorGrey font-12 text-center semiBold">Realizar necesidades fisiológicas en el espacio público.</td>
+                        <td class="colorGrey font-12 text-center semiBold">140</td>
+                        <td class="colorGrey font-12 text-center semiBold">14</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+    </body>
+</html>

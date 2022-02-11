@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <title>Farus - Te guía</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script text="text/javascript" src="js/jquery.js"></script>
+    <script text="text/javascript" src="js/app.js"></script>
+    <script text="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header class="nav-header pad-20">
+        <div class="container-fluid">
+            <div class="col-md-4">
+                <a href="index.html">
+                        <img src="images/farus.png" alt="Farus">
+                    </a>
+            </div>
+            <div class="float-right">
+                <span class="pad-lt-rt colorWhite font-16"><span class="icon-calendar font-20"></span> 12/09/2017</span>
+                <span class="pad-lt-rt colorWhite font-16"><span class="icon-hour font-20"></span> 04:58:30 PM</span>
+                <span class="pad-lt-rt colorWhite font-16"><span class="icon-perfil font-14 circleUser"></span> Daniel Eduardo
+                Alzate
+                </span>
+            </div>
+        </div>
+    </header>
+    <aside id="menu-left">
+        <div class="items">
+            <a href="procesos.html" target="_self">
+                <div class="btnMenu active">
+                    <img src="images/procesos.png" alt="Procesos">
+                    <p class="colorBlue semiBold text-center font-14">Procesos</p>
+                </div>
+            </a>
+        </div>
+        <div class="items">
+            <a href="#" target="_self">
+                <div class="btnMenu">
+                    <img src="images/sistemas.png" alt="Sistemas de información">
+                    <p class="colorBlue semiBold text-center font-14">Sistema de información</p>
+                </div>
+            </a>
+        </div>
+        <div class="items">
+            <a href="#" target="_self">
+                <div class="btnMenu">
+                    <img src="images/conmutacion.png" alt="Conmutación">
+                    <p class="colorBlue semiBold text-center font-14">Conmutación</p>
+                </div>
+            </a>
+        </div>
+        <div class="items">
+            <a href="#" target="_self">
+                <div class="btnMenu">
+                    <img src="images/codigo.png" alt="Código de policía">
+                    <p class="colorBlue semiBold text-center font-14">Código de Policía</p>
+                </div>
+            </a>
+        </div>
+        <div class="items">
+            <a href="#" target="_self">
+                <div class="btnMenu">
+                    <img src="images/conductas.png" alt="Conductas">
+                    <p class="colorBlue semiBold text-center font-14">Conductas</p>
+                </div>
+            </a>
+        </div>
+    </aside>
+    <section id="right-content" class="containers mg-top-100 pad-Btm-100">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <div class="float-right">
+                    <span class="circleGray font-16 colorWhite semiBold">1</span>
+                    <span class="font-14 colorLgtGrey semiBold relative tituloGray"> Verificacion de datos</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="float-left">
+                    <span class="circleBlue font-16 colorWhite semiBold">2</span>
+                    <span class="font-14 colorBlue semiBold relative tituloGradient"> Realizar audiencia</span>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <!--Step by step-->
+        <nav class="bar-progress mg-top-30">
+            <!--linea-->
+            <div class="row relative">
+                <div id="myProgress" class="center-absolute">
+                    <div id="myBar" style="width: 100%;"></div>
+                </div>
+            </div>
+            <div class="bar-step">
+                <div class="div-row">
+                    <!-- step 1 -->
+                    <div class="step last font-12 semiBold">
+                        <div class="circulo">1</div>
+                        <p class="pad-top-5">Revisión de datos básicos</p>
+                    </div>
+                    <!-- step 2 -->
+                    <div class="step last font-12 semiBold">
+                        <div class="circulo">2</div>
+                        <p class="pad-top-5">Verificación comparecencia<br>de las partes</p>
+                    </div>
+                    <!-- step 3 -->
+                    <div class="step last font-12 semiBold">
+                        <div class="circulo">3</div>
+                        <p class="pad-top-5">Inicio grabación</p>
+                    </div>
+                    <!-- step 4 -->
+                    <div class="step last font-12 semiBold">
+                        <div class="circulo">4</div>
+                        <p class="pad-top-5">Lectura inicial</p>
+                    </div>
+                    <!-- step 5 -->
+                    <div class="step last font-12 semiBold">
+                        <div class="circulo">5</div>
+                        <p class="pad-top-5">Explicación de<br>exposición de motivos</p>
+                    </div>
+                    <!-- step 6 -->
+                    <div class="step last font-12 semiBold">
+                        <div class="circulo">6</div>
+                        <p class="pad-top-5">Conciliación</p>
+                    </div>
+                    <!-- step 7 -->
+                    <div class="step last font-12 semiBold">
+                        <div class="circulo">7</div>
+                        <p class="pad-top-5">Pruebas</p>
+                    </div>
+                    <!-- step 8 -->
+                    <div class="step last font-12 semiBold">
+                        <div class="circulo">8</div>
+                        <p class="pad-top-5">Decisión</p>
+                    </div>
+                    <!-- step 9  -->
+                    <div class="step active  font-12 semiBold">
+                        <div class="circulo">9</div>
+                        <p class="pad-top-5">Recursos</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <article class="row mg-top-20">
+            <div class="col-md-12">
+                <div class="circle">
+                    <img class="centerImg" src="Images/juez.png" alt="">
+                </div>
+                <div class="cont-title">
+                    <h4 class="text-center bold colorBlue font-14">Audiencia pública</h4>
+                </div>
+            </div>
+        </article>
+        <article class="row mg-top-10">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <p class="colorSkin semiBold font-12 text-right mg relative punto">Grabación en curso</p>
+                <p class="colorSkin semiBold font-12 text-right mg">00:15:45</p>
+            </div>
+        </article>
+        <article class="row">
+            <div class="col-md-12">
+                <h4 class="text-center semiBold colorBlue font-14 mg">Recursos Reposición</h4>
+                <p class="text-justify font-12 semiBold colorGrey mg-top-10">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                    ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                    fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                    justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
+            </div>
+        </article>
+        <article class="row mg-top-10">
+            <p class="colorBlack bold font-12 text-center">¿Se interpone recurso de apelación?</p>
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <a href="#">
+                    <div class="btns btns-wid60 mg-top-10 float-right">
+                        <p class="font-12 semiBold text-center">Si</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="#">
+                    <div class="btns btns-wid60 mg-top-10">
+                        <p class="font-12 semiBold text-center">No</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3"></div>
+        </article>
+        <article class="row mg-top-20">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <p class="semiBold font-12 colorGrey text-right">La audiencia se suspende por:</p>
+            </div>
+            <div class="col-md-2">
+                <select class="semiBold font-12 colorGrey infractor" name="plazoDias" id="plazo">
+                    <option value="---">---</option>
+                    <option class="semiBold font-12 colorGrey" value="3dias">3 días</option>
+                    <option class="semiBold font-12 colorGrey" value="5dias">5 días</option>
+                    <option class="semiBold font-12 colorGrey" value="10dias">10 días</option>
+                </select>
+            </div>
+            <div class="col-md-4"></div>
+            <!-- Modal -->
+            <div class="modal fade" id="alert1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img class="centerImg colorSky font-22 bold" src="images/advertance.png" alt="!">
+                            <p class="font-12 bold colorGrey text-center mg-top-10">La audiencia se ha suspendido por 3 días para la demostración de pruebas.</p>
+                            <div class="centerImg btns-wid15">
+                                <a href="#" data-dismiss="modal">
+                                    <div class="btns mg-top-10">
+                                        <p class="font-14 semiBold text-center">Finalizar</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modal -->
+            <!-- Modal -->
+            <div class="modal fade" id="alert2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img class="centerImg colorSky font-22 bold" src="images/advertance.png" alt="!">
+                            <p class="font-12 bold colorGrey text-center mg-top-10">La audiencia se ha suspendido por 5 días para la demostración de pruebas.</p>
+                            <div class="centerImg btns-wid15">
+                                <a href="#" data-dismiss="modal">
+                                    <div class="btns mg-top-10">
+                                        <p class="font-14 semiBold text-center">Finalizar</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modal -->
+            <!-- Modal -->
+            <div class="modal fade" id="alert3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img class="centerImg colorSky font-22 bold" src="images/advertance.png" alt="!">
+                            <p class="font-12 bold colorGrey text-center mg-top-10">La audiencia se ha suspendido por 10 días para la demostración de pruebas.</p>
+                            <div class="centerImg btns-wid15">
+                                <a href="#" data-dismiss="modal">
+                                    <div class="btns mg-top-10">
+                                        <p class="font-14 semiBold text-center">Finalizar</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modal -->
+        </article>
+        <article class="row mg-top-20">
+            <div class="col-md-4">
+                <a href="recursos.html">
+                    <div class="right-auto">
+                        <p class="font-12 semiBold colorSky scale"><span class="icon-arrow-left font-14 colorWhite circleSky"></span> Atrás</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <a href="final.html">
+                    <div class="left-auto">
+                        <p class="font-12 semiBold colorSky text-right scale">Siguiente <span class="icon-arrow-right font-14 colorWhite circleSky"></span></p>
+                    </div>
+                </a>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>
